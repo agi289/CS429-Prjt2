@@ -1,0 +1,9 @@
+To compile the assembler I used the command
+gcc -o assembler assembler.c assembler.h instructions.c opcode.c data.c binary.c
+./assembler "test-suite/sample.slk" 
+~ I replaced "sample.slk" with whichever input file I used, for example s1.slk, s2.slk and so forth
+
+To compile the simulator I used the command
+gcc -o simulator simulator.c
+./sim "test-suite/sample.slko" 
+~ if the input file was s1.slk the output would be s1.slko
